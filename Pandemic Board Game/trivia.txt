@@ -1,0 +1,180 @@
+Question 1 : Who was the first man to walk on the moon?
+a: Chris Hadfield
+b: Sally Ride
+c: Buzz Aldrin
+d: Neil Armstrong 
+Correct:d
+Question 2 : Who invented the telephone?
+a: Nikola Tesla
+b: Leonardo da Vinci
+c: Alexander Graham Bell 
+d: Benjamin Franklin
+Correct:c
+Question 3 : Which planet downgraded to a dwarf planet in 2006?
+a: Pluto
+b: Mars
+c: Jupiter
+d: Saturn
+Correct:a
+Question 4 : The atomic bomb was sent to which Japanese City?
+a: Hiroshima
+b: Tokyo
+c: Yokohama
+d: Osaka
+Correct:a
+Question 5 : In which year did WWI begin?
+a: 1925
+b: 1914
+c: 1895
+d: 1932
+Correct:b
+Question 6 : What year was the European Union founded?
+a: 1993
+b: 1998
+c: 2003
+d: 1985
+Correct:a
+Question 7 : The Great Pyramid was built for which pharaoh?
+a: Hatshepsut
+b: Khufu
+c: Djoser
+d: Akhenaten
+Correct:b
+Question 8 : What is the largest known land animal?
+a: Cow
+b: Rhino
+c: Elephant
+d: Whale
+Correct:c
+Question 9 : How many teeth does an adult human have? 
+a: 32
+b: 30
+c: 25
+d: 34
+Correct:a
+Question 10 : What is the hardest natural substance on Earth?
+a: Silver
+b: Iron
+c: Gold 
+d: Diamond
+Correct:d
+Question 11 : How many bones do sharks have?
+a: 1512
+b: 236
+c: 0
+d: 105
+Correct:c
+Question 12 : What is the powerhouse of the cell?
+a: Nucleolus
+b: Ribosomes
+c: Nucleus
+d: Mitochondria
+Correct:d
+Question 13 : Which is the longest river in the world?
+a: Amazon River
+b: Mississippi River
+c: Nile River
+d: Amur River
+Correct:c
+Question 14 : What country has the most natural lakes?
+a: China
+b: Russia
+c: America
+d: Canada
+Correct:d
+Question 15 : What is the name of the smallest country in the world?
+a: The Vatican City
+b: Maldives 
+c: Monaco
+d: Sri Lanka
+Correct:a
+Question 16 : How many countries are there in Africa?
+a: 54
+b: 45
+c: 36
+d: 64
+Correct:a
+Question 17 : What are the three primary colors?
+a: Red, yellow, and purple
+b: Red, yellow, and blue
+c: Black, green, red
+d: White, green, red
+Correct:b
+Question 18 : Who painted the Mona Lisa?
+a: Pablo Picasso
+b: Vincent van Gogh
+c: Leonardo Da Vinci
+d: Michelangelo
+Correct:c
+Question 19 : How many times has the Mona Lisa been stolen?
+a: 1
+b: 2 
+c: 5
+d: 0
+Correct:a
+Question 20 : What sport is dubbed the king of sports? 
+a: Golf
+b: Cricket
+c: Soccer
+d: Basketball
+Correct:c
+Question 21 : What is Canadas national sport? 
+a: Hockey
+b: Lacrosse
+c: Rugby
+d: Soccer
+Correct:b
+Question 22 : How big is an Olympic sized swimming pool in meters?
+a: 35 meters long
+b: 100 meters long
+c: 50 meters long
+d: 70 meters long
+Correct:b
+Question 23 : How long is a marathon? 
+a: 42.2 kilometres
+b: 32 kilometres 
+c: 30 kilometres
+d: 51.1 kilometres
+Correct:a
+Question 24 : Which famous painter cut off a part of his ear?
+a: Pablo Picasso
+b: Vincent van Gogh
+c: Leonardo Da Vinci
+d: Michelangelo
+Correct:b
+Question 25 : How many time zones does Russia have?
+a: 13
+b: 11
+c: 7
+d: 3
+Correct:b
+Question 26 : What is the largest internal organ of the human body?
+a: Pancreas
+b: Spleen
+c: Kidneys
+d: Liver
+Correct:d
+Question 27 : Where is the Pyramid of the Sun located?
+a: Mexico
+b: Egypt 
+c: Iraq
+d: Peru
+Correct:a
+Question 28 : What is the first animal that was sent into space?
+a: A monkey
+b: A cat
+c: A hamster 
+d: A dog
+Correct:d
+Question 29 : What is the name of the largest city in Australia?
+a: Melbourne
+b: Sydney
+c: Adelaide
+d: Brisbane
+Correct:d
+Question 30 : How many countries are there in the United Kingdom?
+a: 3
+b: 4
+c: 1
+d: 5 
+Correct:b

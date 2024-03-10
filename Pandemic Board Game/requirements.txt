@@ -1,0 +1,118 @@
+Pandemic
+
+High Level Summary/Preface 
+
+Our game will be based off of the popular board game: Pandemic where players must work together to treat different areas of the map where diseases are prevalent and work towards the goal of collecting enough research information to develop a cure for 4 different plagues. 
+
+Our implementation of Pandemic instead focuses on players competing with one another to reach a cure at the end of the map that they can use to eradicate the plague in their respective country. Each player will be from a different country and will follow a unique path to reach a cure. Each path will contain 15 cells that players must go through, cells can contain events that might hinder the player to reach the cure or allow them to reach the cure faster than the others. All paths will converge into a cell containing the cure. The first player to reach this cell after traversing through their respective path wins the game. 
+
+A plague will break out in a random area on the map, along with a timer that will dictate how long until the plague affects each country each player is from. Once the timer hits 0, every player not already in the cell with the cure will lose. Therefore, the goal of our game is for each player to traverse their respective path before the timer hits 0, if all players do not make it to the end, there is no winner. If more than one player reaches the end before the timer hits 0, they each win and cure the plague in their country. 
+
+Paths each player will take will consist of various trivia popup questions or chance cards that can affect how players traverse their path. Chance cards can be positive or negative, as they can either allow players to skip a cell, add time to the timer, or enhance their speed (travel 1 or 2 cells at a time). Trivia questions are separate from the chance cards and can also grant the player unique advantages if they get the corresponding trivia question correct. Players can decide on the difficulty of the game, each increase in difficulty allows for less starting time with the timer, and less positive chance cards that players can pick up. 
+
+As we design the core mechanics of this game, we must find a good balance between the length of the path each player takes and the length of the timer, as having too long of a path and a short timer can make the win condition quite hard to meet. Players will move along their path using a 4 sided die. 
+
+Players will learn how to play the game through an in game help file that players can access from the main menu of the user interface. This help file will include the main rules, information about chance and trivia cards, movement mechanics, and the win condition. 
+
+
+
+
+
+User Stories/Scenarios 
+
+- Proposed Story for Chance cards:
+
+Bob sees a new game developed by a group of CMPT276 students on Github. He decides to give it a try. He invites his 4 friends and they each select a country to represent. Bob selects Canada, John selects India, Jerry selects China, Robert selects Afghanistan, and Derick selects U.S. Each player rolls a 4-sided dice to determine who should go first. Bob rolls the highest number and thus goes first. Bob starts by rolling a 2 and the timer starts. Bob proceeds 2 cells forward into an empty cell. John, Jerry, Robert, and Derick all roll a 1 and move up one cell each into empty cells. Bob then rolls a 3 and moves into a cell with a chance card, he picks up the card and reads it aloud, the chance card says on his next turn, he can skip 2 cells. The other players make their respective moves into uneventful cells. On his next turn, Bob skips 2 cells into another cell with a chance card, again he picks up the card and reads it aloud, the chance card says he must now move back two cells. Bob then moves back into the slot he was in before, making no progress towards the cure. Bob’s turn is still active, after a few more dice rolls alternating between each player, Bob reaches the cell with the cure and eradicates the plague in Canada before the timer reaches 0, Bob has won the game. 
+
+
+- Proposed Story for Trivia cards: 
+
+Dave finds a game on Github made by some CMPT students. He gets his friends Rob, James, John, and Jim interested and tells them to pick a country. Dave picks Canada, Rob picks USA, James picks Mexico, John picks Germany, and Jim picks India. Each player rolls a 4-sided die to determine who goes first. Dave rolls a 4, Rob rolls a 3, James rolls a 2, John rolls a 1, and Jim rolls a 1. John and Jim roll again to see who goes between them and John wins. Dave starts the game by rolling the 4-sided die, starting the timer, and rolls a 2. Dave moves 2 cells forward and lands on an empty cell. Dave then waits as Rob, James, John, and Jim take their turns. However, they all received a 1 and landed on empty cells. Dave rolls the dice again and receives a 1 this time. Dave then moves forward 1 cells and lands on a trivia card. He then gets asked a trivia question, answers the question right, and is able to skip one cell. He then waits for his friends to take their turns. They all roll a 1 again and land on empty cells. Dave rolls again, receiving a 3. He moves 3 cells forward, landing on another trivia question. This time he answers it incorrect and his next turn gets skipped. His friends all roll a 2, landing on a chance card. Dave's turn is then skipped and he waits for his friends to go again. After a few more turns, the timer runs out and no one makes it to the cure. Therefore, no one was able to eradicate the plague in their country and everyone loses.
+
+
+
+
+
+
+Functional Requirements:
+
+Below you will find structured and tabular requirements we have proposed for our software. 
+
+Structured Format: 
+
+Function: 
+- through a series of 4-sided dice roll movements, each player shall make their way through a randomly generated path towards a cure cell before the timer hits 0. Once one or more players reach this space, it will help eliminate the plague in their respective country. 
+Description:
+- The system shall use a timer as the basis for helping players move through their own path, each path shall be generated randomly with a pre-set number of chance and trivia cards. All players who make it to the end of their respective path win the game. The system shall activate the timer when it identifies that player 1 has made their first move forward. The system shall include an AI that will randomize between different trivia questions. 
+Inputs: 
+- The system shall allow players to select each of the following from the main menu: 5 different countries, and the difficulty of the game. There will be 3 difficulty levels to choose from: Easy, Medium, and Hard.  Source of Movement: 
+- Movement input shall be controlled by the outcome of a 4-sided dice roll that is reset after each player performs their turn. The system shall move each player x number of cells forward dependant on the outcome of dice rolls. 
+Destination:
+- All paths shall converge to a cell containing the cure. 
+Action:
+- Positive chance cards could be set up to represent the following list of powerups:
+o Player skips 1 or 2 cells
+o On this players next turn, he/she can roll twice.
+- Negative chance cards could be set up to represent the following list of powerups: 
+o Player moves back 1 or 2 cells
+o On this players turn, their turn is skipped. 
+- Neutral chance cards have no effect. 
+- Trivia card outcomes shall correspond to the effects of positive and negative chance cards. (Dependant on if the player gets the answer right or wrong)
+- The system shall prompt a player to be able to read a chance and/or trivia card they encounter. 
+Precondition to play:
+- 5 players
+
+
+
+
+
+
+Other Notes: 
+- From the main menu, players shall be able to access a help file containing game rules, and high-level documentation on chance and trivia cards. 
+- The game board shall be generated with 15 cells.
+- Trivia questions shall be AI generated randomly from a geography-based context. 
+
+Tabular Format(Chance and Trivia Cards) – based on 5 of each: 
+
+| Chance Card Drawn | Chance Card Outcome |
+| Positive | Skip 1 cell |
+| Positive | Roll twice on next turn |
+| Negative | Move back 1 cell | 
+| Negative | Skip your next turn |
+| Neutral | No effect |
+
+| Player Answer (Correct/incorrect) | Trivia Card Outcome |
+| Correct | Skip 1 cell |
+| Incorrect | Move back 1 cell |
+| Correct | Roll twice on next turn |
+| Incorrect | Skip your next turn |
+| Correct | Pick one player to move back 1 cell |
+
+Tabular Format (Win and Loss Conditions):
+
+| Timer Status | Number of Players at Cure Cell | Number of Winners | Number of Losers |
+| Active | 1 | 1 | 4 |
+| Active | 2 | 2 | 3 |
+| Active | 3 | 3 | 2 |
+| Active | 4 | 4 | 1 |
+| Active | 5 | 5 | 0 |
+| Inactive (at 0:00) | 0 | 0 | 5 |
+
+
+Non-Functional:
+
+- The system shall ensure each player is assigned to a valid country upon initiation of a game instance. 
+- The response time of the program for some player input shall exceed no more than 0.5s. 
+- The game needs to run smoothly without crashing or faulting abruptly. 
+- The AI needs to make sure questions are asked to players specifically from some category of questions based on player set difficulty. (Questions should not be so broad/open-ended or obscure). 
+- Players should be able to reach the win condition before the timer depletes.  
+- The game layout should reset and reconfigure after the end of one instance if players wish to play again. 
+- The game board should be clearly visible to players within a standard desktop resolution of 1920x1080.
+- All of the game files should be easily accessible to players and game rules should be easy to understand.
+- The system should not allow players to move if it is not currently their turn. 
+- The system should not allow more than 5 players to start a game. 
+
+
+
+
+
